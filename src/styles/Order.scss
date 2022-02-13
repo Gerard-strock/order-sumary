@@ -1,0 +1,134 @@
+@import "../styles/globals";
+
+body {
+  font-size: 62.5%;
+  font-family: $Red-hat;
+}
+
+.order-sumary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $Pale-blue;
+  height: calc(100vh - 1px);
+}
+
+.sumary-top {
+  display: grid;
+  align-items: center;
+  max-width: 300px;
+  height: auto;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.img-hero {
+  max-width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.sumary-bottom {
+  background-color: $White;
+  text-align: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0px 18px 30px -12px $Desaturated-blue;
+}
+
+.title-sumary {
+  font-size: $Font-size-title;
+  color: $Dark-blue;
+}
+
+.paraph-sumary {
+  font-size: $Font-size-paraph;
+  color: $Desaturated-blue;
+  text-align: center;
+  margin: 25px 30px 10px;
+  padding: 5px auto;
+}
+
+.box-sumary {
+  display: grid;
+  grid-template-columns: repeat(3, 20%);
+  justify-content: space-evenly;
+  background-color: $Very-pale-blue;
+  align-items: center;
+  margin: 25px 30px 10px;
+  padding: 0px 10px;
+  border-radius: 15px;
+}
+
+.music-icon {
+  width: 50%;
+}
+
+.annual-plan {
+  color: $Dark-blue;
+  font-size: $Font-size-paraph;
+  font-weight: 600;
+}
+
+.price-plan {
+  color: $Desaturated-blue;
+  font-size: $Font-size-paraph;
+}
+
+.price-change {
+  color: $Desaturated-blue;
+  font-size: $Font-size-paraph;
+  color: $Bright-blue;
+  text-decoration: underline;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.buttons-payment {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-payment {
+  background-color: $Bright-blue;
+  font-size: $Font-size-paraph;
+  color: $White;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 5px 5px;
+  box-shadow: 0px 3px 40px -15px $Bright-blue;
+  margin: 20px 30px 20px;
+  border: none;
+}
+.button-payment:hover {
+  background-color: $Dark-blue;
+  cursor: pointer;
+}
+.second-button {
+  background-color: $White;
+  margin-bottom: 30px;
+  color: $Dark-blue;
+  font-size: $Font-size-paraph;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 2vh;
+}
+.links-footer {
+  color: $Bright-blue;
+}
+@media (max-width: 650px) {
+  .title-sumary {
+    display: flex;
+    flex-direction: column;
+  }
+  .paraph-sumary {
+    display: flex;
+    flex-direction: column;
+  }
+}
